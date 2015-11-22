@@ -248,12 +248,26 @@
 
     });
 
+    $.fn.scrollBottom = function() {
+      return $(document).height() - this.scrollTop() - this.height();
+    };
+
     function onScroll(event){
       var scrollPos = $(document).scrollTop();
       $('.navbar a').each(function () {
           var currLink = $(this);
           var refElement = $(currLink.attr("href"));
-          if (refElement.position().top <= (scrollPos+50) && refElement.position().top + refElement.height() > (scrollPos - 50)) {
+          var refElementBottomPos = refElement.position().top + refElement.outerHeight();
+
+          if (
+              (
+                refElement.position().top <= (scrollPos+50)
+                &&
+                refElement.position().top + refElement.height() > (scrollPos - 50)
+              )
+              ||
+              (refElementBottomPos == scrollPos + $(window).height())
+            ) {
               $('.navbar ul li a').removeClass("active");
               currLink.addClass("active");
           }
