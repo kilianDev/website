@@ -1,3 +1,18 @@
+/* purple : B799F7 */
+/* blue : A3B4F8 */
+
+/* -------------
+    HTML Components
+   ------------- */
+hr {
+  width: 150px;
+  border-top-color: #A3B4F8;
+  border-top-width: thin;
+}
+
+/* -------------
+    Sections
+   ------------- */
 .section-header {
   text-align: center;
 }
@@ -5,9 +20,33 @@
 .section-title {
   font-size: 2.5em;
   font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
 .section-subtitle {
   font-size: 2em;
   font-weight: 200;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.section-intro {
+  text-align: center;
+  background-color: #F7F7F7;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-exp {
+  text-align: center;
+}
+
+.section-skills {
+  text-align: center;
+  background-color: #F7F7F7;
+}
+
+.section-contact {
+  text-align: center;
 }
