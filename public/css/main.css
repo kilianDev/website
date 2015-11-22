@@ -1,18 +1,54 @@
-/* purple : B799F7 */
-/* blue : A3B4F8 */
+/* purple : B094EE */
+/* blue : 96A7EE */
 
 /* -------------
     HTML Components
    ------------- */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 hr {
-  width: 150px;
-  border-top-color: #A3B4F8;
+  width: 100px;
+  border-top-color: #93B3ED;
   border-top-width: thin;
+}
+
+/* -------------
+    Navbar
+   ------------- */
+.navbar {
+  padding-top: 10px;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.navbar a {
+  color: #666666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar a:active {
+  color: #93B3ED;
 }
 
 /* -------------
     Sections
    ------------- */
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .section-header {
   text-align: center;
 }
@@ -25,6 +61,7 @@ hr {
 }
 
 .section-subtitle {
+  font-style: italic;
   font-size: 2em;
   font-weight: 200;
   padding-top: 10px;
