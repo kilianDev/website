@@ -12,11 +12,11 @@ body {
     Navbar
    ------------- */
 .navbar {
-  background-color: #20304C;
+  background-color: #FFFFFF;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #DDDDDD;
+    color: #555555;
 }
 
 .navbar li {
@@ -24,19 +24,19 @@ body {
 }
 
 .navbar li.active {
-  border-top: 3px solid #B8CBED;
+  border-top: 3px solid #4B6289;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    color: #B8CBED;
+    color: #4B6289;
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-  color: #B8CBED;
+  color: #4B6289;
   background-color: transparent;
 }
 
@@ -68,9 +68,10 @@ section {
 
 .section-intro {
   text-align: center;
-  background-color: #B8CBED;
+  background-color: #4B6289;
   padding-top: 150px;
   padding-bottom: 150px;
+  color: #DDDDDD;
 }
 
 .section-exp {
@@ -84,5 +85,6 @@ section {
 
 .section-contact {
   text-align: center;
-  background-color: #B8CBED;
+  background-color: #4B6289;
+  color: #DDDDDD;
 }
