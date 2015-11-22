@@ -20,10 +20,21 @@
   <body>
 
     <div class="navbar">
-      <a href="#section-intro">Home</a>
-      <a href="#section-exp">Experience</a>
-      <a href="#section-skills">Skills</a>
-      <a href="#section-contact">Contact</a>
+      <ul>
+        <li>
+          <a class="scrollTo active" href="#section-intro">Home</a>
+        </li>
+        <li>
+          <a class="scrollTo" href="#section-exp">Experience</a>
+        </li>
+        <li>
+          <a class="scrollTo" href="#section-skills">Skills</a>
+        </li>
+        <li>
+          <a class="scrollTo" href="#section-contact">Contact</a>
+        </li>
+      </ul>
+
     </div>
 
 
@@ -31,13 +42,13 @@
       <div class="container">
         <div class="row">
           <header class="section-header">
-            <p class="section-title">
+            <h1 class="section-title">
               Kilian Devouassoux
-            </p>
-            <hr/>
-            <p class="section-subtitle">
+            </h1>
+            <!-- <hr/> -->
+            <h2 class="section-subtitle">
               Duis placerat, nisi eget tincidunt elementum, dolor massa malesuada sem, in elementum velit magna eget urna. Vestibulum aliquet justo nisl, ac rutrum neque volutpat non. In porttitor ullamcorper sem, ut sollicitudin urna vehicula non.
-            </p>
+            </h2>
           </header>
         </div>
       </div>
@@ -47,13 +58,13 @@
       <div class="container">
         <div class="row">
           <header class="section-header">
-            <p class="section-title">
+            <h1 class="section-title">
               Experience
-            </p>
-            <hr/>
-            <p class="section-subtitle">
+            </h1>
+            <!-- <hr/> -->
+            <h2 class="section-subtitle">
               Duis placerat, nisi eget tincidunt elementum, dolor massa malesuada sem, in elementum velit magna eget urna. Vestibulum aliquet justo nisl, ac rutrum neque volutpat non. In porttitor ullamcorper sem, ut sollicitudin urna vehicula non.
-            </p>
+            </h2>
           </header>
         </div>
         <div class="row">
@@ -108,13 +119,13 @@
       <div class="container">
         <div class="row">
           <header class="section-header">
-            <p class="section-title">
+            <h1 class="section-title">
               Skills
-            </p>
-            <hr/>
-            <p class="section-subtitle">
+            </h1>
+            <!-- <hr/> -->
+            <h2 class="section-subtitle">
               Duis placerat, nisi eget tincidunt elementum, dolor massa malesuada sem, in elementum velit magna eget urna. Vestibulum aliquet justo nisl, ac rutrum neque volutpat non. In porttitor ullamcorper sem, ut sollicitudin urna vehicula non.
-            </p>
+            </h2>
           </header>
         </div>
         <div class="row">
@@ -188,13 +199,13 @@
         <div class="row title-contact">
           <div class="col-lg-12">
             <header class="section-header">
-              <p class="section-title">
+              <h1 class="section-title">
                 Contact
-              </p>
-              <hr/>
-              <p class="section-subtitle">
+              </h1>
+              <!-- <hr/> -->
+              <h2 class="section-subtitle">
                 Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
+              </h2>
             </header>
           </div>
         </div>
@@ -209,5 +220,45 @@
 
     <script src="./public/js/jquery-2.1.4.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+      $(document).on("scroll", onScroll);
+
+      //smoothscroll
+      $('a[href^="#"]').on('click', function (e) {
+          e.preventDefault();
+          $(document).off("scroll");
+
+          $('a').each(function () {
+              $(this).removeClass('active');
+          })
+          $(this).addClass('active');
+
+          var target = this.hash,
+              menu = target;
+          $target = $(target);
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top+2
+          }, 500, 'swing', function () {
+              window.location.hash = target;
+              $(document).on("scroll", onScroll);
+          });
+      });
+
+    });
+
+    function onScroll(event){
+      var scrollPos = $(document).scrollTop();
+      $('.navbar a').each(function () {
+          var currLink = $(this);
+          var refElement = $(currLink.attr("href"));
+          if (refElement.position().top <= (scrollPos+50) && refElement.position().top + refElement.height() > (scrollPos - 50)) {
+              $('.navbar ul li a').removeClass("active");
+              currLink.addClass("active");
+          }
+      });
+    }
+    </script>
   </body>
 </html>
