@@ -7,61 +7,46 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
-hr {
-  width: 100px;
-  border-top-color: #93B3ED;
-  border-top-width: thin;
-}
 
 /* -------------
     Navbar
    ------------- */
 .navbar {
-  padding-top: 15px;
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.9;
-  background-color: #333333;
-  text-align: right;
+  background-color: #20304C;
 }
 
-.navbar a {
-  color: #EDEDED;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-top: 13px;
-}
-
-.navbar ul {
-  margin: 0;
+.navbar-default .navbar-nav>li>a {
+    color: #DDDDDD;
 }
 
 .navbar li {
-  list-style: none;
-  display: inline;
+  text-transform: uppercase;
 }
 
-.navbar a:hover {
-  color: #93B3ED;
+.navbar li.active {
+  border-top: 3px solid #B8CBED;
 }
 
-.navbar a.active {
-  color: #93B3ED;
-  border-top: 3px solid #93B3ED;
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #B8CBED;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #B8CBED;
+  background-color: transparent;
 }
 
 /* -------------
     Sections
    ------------- */
 section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  color: #333333;
 }
 
 .section-header {
@@ -83,10 +68,9 @@ section {
 
 .section-intro {
   text-align: center;
-  background-color: #333333;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  color: #F7F7F7;
+  background-color: #B8CBED;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .section-exp {
@@ -100,4 +84,5 @@ section {
 
 .section-contact {
   text-align: center;
+  background-color: #B8CBED;
 }

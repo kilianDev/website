@@ -19,7 +19,7 @@
   </head>
   <body>
 
-    <div class="navbar">
+    <!-- <div class="navbar navbar-fixed-top">
       <ul>
         <li>
           <a class="scrollTo active" href="#section-intro">Home</a>
@@ -35,7 +35,38 @@
         </li>
       </ul>
 
-    </div>
+    </div> -->
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a class="scrollTo" href="#section-intro">Home</a>
+            </li>
+            <li>
+              <a class="scrollTo" href="#section-exp">Experience</a>
+            </li>
+            <li>
+              <a class="scrollTo" href="#section-skills">Skills</a>
+            </li>
+            <li>
+              <a class="scrollTo" href="#section-contact">Contact</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
 
     <section id="section-intro" class="section-intro">
@@ -47,7 +78,7 @@
             </h1>
             <!-- <hr/> -->
             <h2 class="section-subtitle">
-              Duis placerat, nisi eget tincidunt elementum, dolor massa malesuada sem, in elementum velit magna eget urna. Vestibulum aliquet justo nisl, ac rutrum neque volutpat non. In porttitor ullamcorper sem, ut sollicitudin urna vehicula non.
+              System engineer and software developer.
             </h2>
           </header>
         </div>
@@ -204,14 +235,21 @@
               </h2>
               <!-- <hr/> -->
               <h3 class="section-subtitle">
-                Donec ullamcorper nulla non metus auctor fringilla.
+                Please feel free to contact me !
               </h3>
             </header>
           </div>
         </div>
         <div class="row infos-contact">
           <div class="col-lg-12">
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p>
+              <i class="fa fa-envelope"></i>
+              kilian.devouassoux@gmail.com
+            </p><br />
+            <p>
+              <i class="fa fa-phone"></i>
+              +33 6 59 58 25 66
+            </p>
           </div>
         </div>
       </div>
@@ -231,9 +269,9 @@
           $(document).off("scroll");
 
           $('a').each(function () {
-              $(this).removeClass('active');
+              $(this).parent().removeClass('active');
           })
-          $(this).addClass('active');
+          $(this).parent().addClass('active');
 
           var target = this.hash,
               menu = target;
@@ -268,8 +306,8 @@
               ||
               (refElementBottomPos == scrollPos + $(window).height())
             ) {
-              $('.navbar ul li a').removeClass("active");
-              currLink.addClass("active");
+              $('.navbar ul li').removeClass("active");
+              currLink.parent().addClass("active");
           }
       });
     }
