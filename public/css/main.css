@@ -22,6 +22,10 @@ body {
 
 .navbar li {
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .navbar li.active {
@@ -39,6 +43,11 @@ body {
 .navbar-default .navbar-nav>.active>a:focus {
   color: #4B6289;
   background-color: transparent;
+}
+
+.navbar li a {
+  user-select: none;
+  position: relative;
 }
 
 /* -------------
@@ -88,4 +97,29 @@ section {
   text-align: center;
   background-color: #4B6289;
   color: #DDDDDD;
+}
+
+/* -------------
+    Ink (Ripple Effect)
+   ------------- */
+/* Ink styles - the elements which will create the ripple effect.
+ * The size and position of these elements will be set by the JS code.
+ * Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.
+ */
+.ink {
+	display: block;
+  position: absolute;
+	background: #4B6289;
+	border-radius: 100%;
+	transform: scale(0);
+}
+
+/* animation effect */
+.ink.animate {
+  animation: ripple 0.65s linear;
+}
+
+@keyframes ripple {
+	/* scale the element to 250% to safely cover the entire link and fade it out */
+	100% {opacity: 0; transform: scale(2.5);}
 }
