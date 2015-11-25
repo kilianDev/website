@@ -163,3 +163,8 @@ section {
 	/* scale the element to 250% to safely cover the entire link and fade it out */
 	100% {opacity: 0; transform: scale(2.5);}
 }
+
+/*.bloc-toggle {
+  background-color: #F7F7F7;
+  color: #4B6289;
+}*/
