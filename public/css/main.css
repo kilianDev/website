@@ -1,11 +1,12 @@
-/* purple : B094EE */
-/* blue : 96A7EE */
-
 /* -------------
     HTML Components
    ------------- */
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* -------------
