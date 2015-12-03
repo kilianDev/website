@@ -9,6 +9,10 @@ a:hover {
   text-decoration: none;
 }
 
+.row-experience {
+  padding: 20px;
+}
+
 /* -------------
     Navbar
    ------------- */
