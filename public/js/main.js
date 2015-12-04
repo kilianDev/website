@@ -41,97 +41,67 @@ $(document).ready(function() {
   Chart.defaults.Radar.scaleFontSize = 16;
   Chart.defaults.Radar.scaleBeginAtZero = true;
 
+  var technicalSkills = [];
+  technicalSkills[1] = {label:"Scrum", value:4 };
+  technicalSkills[2] = {label:"PHP", value:3.5 }
+  technicalSkills[3] = {label:"MySQL", value:4 }
+  technicalSkills[4] = {label:"Système Linux", value:4 }
+  technicalSkills[5] = {label:"Réseaux", value:3.5 }
+  technicalSkills[6] = {label:"HTML/CSS", value:3 }
+  technicalSkills[7] = {label:"Javascript", value:3 }
+  technicalSkills[8] = {label:"Middleware", value:4 }
+  technicalSkills[9] = {label:"Scripting Bash/Perl", value:3.5 }
+
+  var technicalSkillsLabel = [];
+  var technicalSkillsValue = [];
+  technicalSkills.forEach(function(entry) {
+    technicalSkillsLabel.push(entry.label);
+    technicalSkillsValue.push(entry.value);
+  });
+
   var technicalCanvas = document.getElementById("technicalChart").getContext("2d");
   var technicalData = {
-    labels: [
-      "Scrum",
-      "PHP",
-      "MySQL",
-      "Système Linux",
-      "Réseaux",
-      "HTML/CSS",
-      "Javascript",
-      "Middleware",
-      "Scripting Bash/Perl",
-    ],
+    labels: technicalSkillsLabel,
     datasets: [
         {
             fillColor: "rgba(129, 103, 244, 0.3)",
             strokeColor: "rgba(129, 103, 244, 1)",
-            data: [
-              4,
-              3.5,
-              3,
-              4,
-              3,
-              2.5,
-              2,
-              3.5,
-              3
-            ]
+            data: technicalSkillsValue,
           }
       ]
   };
   var myTechnicalChart = new Chart(technicalCanvas).Radar(technicalData);
 
+  var professionalSkills = [];
+  professionalSkills[1] = {label:"Gestion du stress", value:4.5 };
+  professionalSkills[2] = {label:"Organisation", value:4.5 }
+  professionalSkills[3] = {label:"Travail en équipe", value:4 }
+  professionalSkills[4] = {label:"Prise de responsabilité", value:4 }
+  professionalSkills[5] = {label:"Autonomie", value:2.5 }
+  professionalSkills[6] = {label:"Leadership", value:4 }
+  professionalSkills[7] = {label:"Aisance en public", value:3 }
+  professionalSkills[8] = {label:"Patience", value:2.5 }
+  professionalSkills[9] = {label:"Faiseur de café", value:4 }
+
+  var professionalSkillsLabel = [];
+  var professionalSkillsValue = [];
+  professionalSkills.forEach(function(entry) {
+    professionalSkillsLabel.push(entry.label);
+    professionalSkillsValue.push(entry.value);
+  });
+
   var professionalCanvas = document.getElementById("professionalChart").getContext("2d");
   var professionalData = {
-    labels: [
-      "Gestion du stress",
-      "Organisation",
-      "Travail en équipe",
-      "Prise de responsabilité",
-      "Autonomie",
-      "Leadership",
-      "Aisance en public",
-      "Patience"
-    ],
+    labels: professionalSkillsLabel,
     datasets: [
         {
             fillColor: "rgba(48, 163, 147, 0.3)",
             strokeColor: "rgba(48, 163, 147, 1)",
-            data: [
-              4.5,
-              4.5,
-              4,
-              4,
-              2.5,
-              4,
-              3,
-              2.5
-            ]
+            data: professionalSkillsValue,
           }
       ]
   };
   var myprofessionalChart = new Chart(professionalCanvas).Radar(professionalData);
-
-
-//   var relationCanvas = document.getElementById("relationChart").getContext("2d");
-//
-//   var relationData = {
-//
-//     labels: ["Gestion du stress", "Autonomie", "Travail en équipe", "Prise de responsabilité",
-//              "Organisation", "Leadership"
-//     ],
-//     datasets: [
-//         {
-//             label: "Technique",
-//             fillColor: "rgba(76, 61, 146, 0.5)",
-//             strokeColor: "rgba(76, 61, 146, 1)",
-//             pointColor: "rgba(76, 61, 146, 1)",
-//             pointStrokeColor: "#fff",
-//             pointHighlightFill: "#fff",
-//             pointHighlightStroke: "rgba(220,220,220,1)",
-//             data: [1, 2, 3, 4, 5, 4]
-//         }
-//     ]
-// };
-//
-//   var myRelationChart = new Chart(relationCanvas).Radar(relationData,{
-//     pointDot: false,
-//     //String - Point label font colour
-//     pointLabelFontColor : "#EFEFEF",
-//   });
 
 });
 
