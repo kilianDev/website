@@ -65,10 +65,10 @@
               Ingénieur système - Développeur logiciel curieux<br />
             </h2>
             <p>
-              Suis-je un développeur full stack ?<br />
+              Suis-je un développeur <em>full stack</em> ?<br />
               Ou bien simplement un développeur passioné et créatif, qui aime
               sortir des sentiers battus, acquérir de nouvelles compétences, et ne jamais se reposer sur ses acquis ?<br />
-              Le terme "full stack" étant un vaste débat, je me pose encore la question.
+              Le terme <em>full stack</em> étant un vaste débat, je me pose encore la question.
             </p>
           </header>
         </div>
@@ -84,7 +84,7 @@
             </h2>
             <!-- <hr/> -->
             <h3 class="section-subtitle">
-              Différents types de missions qui définissent ma vie professionelle ces 5 dernières années
+              Différents types de missions qui définissent ma vie professionnelle ces 5 dernières années
             </h3>
           </header>
         </div>
@@ -112,7 +112,7 @@
         <div class="row row-experience">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <h3>PHP</h3>
-            <p>Développement d'un frontal professionnel en mode SAAS, basé sur un backend PHP5.</p>
+            <p>Développement d'un frontal professionnel SAAS, basé sur un backend PHP5.</p>
             <p>Participation à la migration d'un code legacy sous le framework Symfony (2.7).</p>
           </div>
 
@@ -160,24 +160,19 @@
             </h2>
             <!-- <hr/> -->
             <h3 class="section-subtitle">
-              Tentative de représentation sincère de mes compétences professionnelles (et autres...)
+              Professionnelles, techniques ou autres
             </h3>
           </header>
         </div>
-        @TODO
-        <div class="row" style="text-align: left;">
-          <ul>
-            <li>PHP5</li>
-            <li>MySQL</li>
-            <li>Linux System</li>
-            <li>Script bash/perl</li>
-            <li>HTML/CSS</li>
-            <li>Javascript</li>
-            <li>Scrum</li>
-            <li>Middleware</li>
-            <li>Docker</li>
-            <li>Big Data</li>
-          </ul>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <canvas id="technicalChart" class="skill-canvas"></canvas>
+          </div>
+
+            <div class="col-lg-6 col-md-12">
+              <canvas id="professionalChart" class="skill-canvas"></canvas>
+            </div>
         </div>
 
       </div><!-- /.container -->
@@ -282,7 +277,7 @@
               </h2>
               <!-- <hr/> -->
               <h3 class="section-subtitle">
-                Je serais ravi de pouvoir échanger avec vous !
+                Je serai ravi de pouvoir échanger avec vous !
               </h3>
             </header>
           </div>
@@ -310,99 +305,7 @@
 
     <script src="./public/js/jquery-2.1.4.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-
-      $(document).on("scroll", onScroll);
-
-      //smoothscroll
-      $('a[href^="#"]').on('click', function (e) {
-          e.preventDefault();
-          $(document).off("scroll");
-
-          $('a').each(function () {
-              $(this).parent().removeClass('active');
-          })
-          $(this).parent().addClass('active');
-
-          var target = this.hash,
-              menu = target;
-          $target = $(target);
-          $('html, body').stop().animate({
-              'scrollTop': $target.offset().top+2
-          }, 500, 'swing', function () {
-              window.location.hash = target;
-              $(document).on("scroll", onScroll);
-          });
-      });
-
-      $(".block-toggle").hide();
-      $(".btn-toggle").on('click',function(){
-        console.log(this);
-
-      });
-
-    });
-
-    $.fn.scrollBottom = function() {
-      return $(document).height() - this.scrollTop() - this.height();
-    };
-
-    function onScroll(event){
-      var scrollPos = $(document).scrollTop();
-      $('.navbar a').each(function () {
-          var currLink = $(this);
-          var refElement = $(currLink.attr("href"));
-          var refElementBottomPos = refElement.position().top + refElement.outerHeight();
-
-          if (
-              (
-                refElement.position().top <= (scrollPos+50)
-                &&
-                refElement.position().top + refElement.height() > (scrollPos)
-              )
-              ||
-              (refElementBottomPos == scrollPos + $(window).height())
-            ) {
-              $('.navbar ul li').removeClass("active");
-              currLink.parent().addClass("active");
-          }
-      });
-    }
-
-    /*
-     * Add the ripple effect on navbar links
-     */
-    var parent, ink, d, x, y;
-
-    $("ul li a").click(function(e){
-    	parent = $(this).parent();
-    	//create .ink element if it doesn't exist
-    	if(parent.find(".ink").length == 0)
-    		parent.prepend("<span class='ink'></span>");
-
-    	ink = parent.find(".ink");
-    	//incase of quick double clicks stop the previous animation
-    	ink.removeClass("animate");
-
-    	//set size of .ink
-    	if(!ink.height() && !ink.width())
-    	{
-    		//use parent's width or height whichever is larger for the diameter to make a circle which can cover the entire element.
-    		d = Math.max(parent.outerWidth(), parent.outerHeight());
-    		ink.css({height: d, width: d});
-    	}
-
-    	//get click coordinates
-    	//logic = click coordinates relative to page - parent's position relative to page - half of self height/width to make it controllable from the center;
-    	x = e.pageX - parent.offset().left - ink.width()/2;
-    	y = e.pageY - parent.offset().top - ink.height()/2;
-
-    	//set the position and add class .animate
-    	ink.css({top: y+'px', left: x+'px'}).addClass("animate");
-    });
-
-
-    </script>
+    <script src="./public/js/chart.min.js"></script>
+    <script src="./public/js/main.js"></script>
   </body>
 </html>
