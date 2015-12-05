@@ -7,16 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Kilian Devouassoux Website">
     <meta name="author" content="">
-    <!-- <link rel="icon" href="../../favicon.ico"> -->
 
     <title>Kilian</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- External CSS -->
     <link href="./public/css/bootstrap.min.css" rel="stylesheet">
     <link href="./public/css/font-awesome.min.css" rel="stylesheet">
-    <link href="./public/css/main.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,600' rel='stylesheet' type='text/css'>
+    <!-- /External CSS -->
 
+    <!-- Main CSS -->
+    <link href="./public/css/main.css" rel="stylesheet">
+    <!-- /Main CSS -->
+
+    <!-- External Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,600' rel='stylesheet' type='text/css'>
+    <!-- /External Fonts -->
+
+    <!-- Favicons  -->
     <link rel="apple-touch-icon" sizes="57x57" href="./public/img/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./public/img/favicons/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./public/img/favicons/apple-touch-icon-72x72.png">
@@ -35,9 +42,11 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-TileImage" content="./public/img/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!-- /Favicons -->
   </head>
   <body>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -69,8 +78,9 @@
         </div>
       </div>
     </nav>
+    <!-- /Navbar -->
 
-
+    <!-- Section introduction -->
     <section id="section-intro" class="section-intro">
       <div class="container-fluid">
 
@@ -85,13 +95,15 @@
             <p>
               Je suis un développeur passioné et motivé, qui aime
               sortir des sentiers battus, acquérir de nouvelles compétences, et ne jamais se reposer sur ses acquis.<br />
-              Je crains donc la monotonie, qui me cantonnerait à un domaine d'expertise et bloquerait toute créativité.
+              Je crains la monotonie, qui me cantonnerait à un domaine d'expertise et bloquerait toute créativité.
             </p>
           </header>
         </div>
       </div>
     </section>
+    <!-- /Section introduction -->
 
+    <!-- Section experiences -->
     <section id="section-exp" class="section-exp">
       <div class="container">
         <div class="row">
@@ -100,7 +112,7 @@
               Expériences
             </h2>
             <h3 class="section-subtitle">
-              Différents types de missions qui définissent ma vie professionnelle ces 5 dernières années
+              Condensé de ma vie professionnelle ces 5 dernières années
             </h3>
           </header>
         </div>
@@ -115,8 +127,8 @@
           <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
             <h3>Système / Réseaux</h3>
             <p>Garant du bon fonctionnement d'une application multi composant / multi technologies.</p>
-            <p>Administration d'une solution SAAS interconnectant près de 1000 serveurs basés sur Ubuntu 8.04 / Ubuntu 12.04.</p>
-            <p>Administration et configuration des serveurs hébergeant les outils d'une équipe R&D.</p>
+            <p>Administration d'une solution SAAS interconnectant près de 1000 serveurs.</p>
+            <p>Administration et configuration des outils internes d'une équipe R&D.</p>
           </div>
 
           <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
@@ -129,7 +141,7 @@
           <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
             <h3>PHP</h3>
             <p>Développement d'un frontal professionnel SAAS, basé sur un backend PHP5.</p>
-            <p>Participation à la migration d'un code legacy sous le framework Symfony (2.7).</p>
+            <p>Participation à la migration d'un code legacy sous le framework Symfony 2.7.</p>
           </div>
 
           <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
@@ -165,7 +177,9 @@
       </div>
       <div>
     </section>
+    <!-- /Section experiences -->
 
+    <!-- Section skills -->
     <section id="section-skills" class="section-skills">
       <div class="container">
 
@@ -175,7 +189,7 @@
               Compétences
             </h2>
             <h3 class="section-subtitle">
-              Professionnelles, techniques ou autres
+              Professionnelles, techniques et relationnelles
             </h3>
           </header>
         </div>
@@ -185,14 +199,16 @@
             <canvas id="technicalChart" class="skill-canvas"></canvas>
           </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <canvas id="professionalChart" class="skill-canvas"></canvas>
-            </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <canvas id="professionalChart" class="skill-canvas"></canvas>
+          </div>
         </div>
 
       </div><!-- /.container -->
     </section>
+    <!-- /Section skills -->
 
+    <!-- Section divers -->
     <section id="section-misc" class="section-misc">
       <div class="container">
         <div class="row title-misc">
@@ -201,23 +217,14 @@
               <h2 class="section-title">
                 Divers
               </h2>
+              <h3 class="section-subtitle">
+                Lorsque je m'éloigne d'un clavier
+              </h3>
             </header>
           </div>
         </div>
 
         <div class="row content-misc">
-
-          <a href="https://fr.linkedin.com/in/kilian-devouassoux-481a352a">
-            <div class="misc_display">
-              <img class="misc_display_image" src="./public/img/linkedin_logo.png">
-              <div class="misc_display_body">
-                <div class="misc_display_inner">
-                  <h2>Linkedin</h2>
-                  <p>Retour à un CV plus conventionnel</p>
-                </div>
-              </div>
-            </div>
-          </a>
 
           <a href="http://meylan-badminton.org/">
             <div class="misc_display">
@@ -277,11 +284,24 @@
             </div>
           </a>
 
+            <a href="https://fr.linkedin.com/in/kilian-devouassoux-481a352a">
+              <div class="misc_display">
+                <img class="misc_display_image" src="./public/img/linkedin_logo.png">
+                <div class="misc_display_body">
+                  <div class="misc_display_inner">
+                    <h2>Linkedin</h2>
+                    <p>Retour à un CV plus conventionnel</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
         </div>
       </div>
-
     </section>
+    <!-- /Section divers -->
 
+    <!-- Section contact -->
     <section id="section-contact" class="section-contact">
       <div class="container">
         <div class="row title-contact">
@@ -291,7 +311,7 @@
                 Contact
               </h2>
               <h3 class="section-subtitle">
-                Je serai ravi de pouvoir échanger avec vous !
+                N'hésitez pas à me contacter, je serai ravi de pouvoir échanger avec vous !
               </h3>
             </header>
           </div>
@@ -313,15 +333,18 @@
           </div>
         </div>
       </div>
-    </div>
-
     </section>
+    <!-- /Section contact -->
 
+    <!-- External javascript -->
     <script src="./public/js/jquery-2.1.4.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>
     <script src="./public/js/Chart.min.js"></script>
+
+    <!-- Main Javascript -->
     <script src="./public/js/main.js"></script>
 
+    <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -330,7 +353,6 @@
 
       ga('create', 'UA-71020572-1', 'auto');
       ga('send', 'pageview');
-
     </script>
 
   </body>
