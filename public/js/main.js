@@ -72,6 +72,7 @@ $(document).ready(function() {
   };
   var myTechnicalChart = new Chart(technicalCanvas).Radar(technicalData);
 
+
   var professionalSkills = [];
   professionalSkills[1] = {label:"Gestion du stress", value:4.5 };
   professionalSkills[2] = {label:"Organisation", value:4.5 }
