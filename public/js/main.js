@@ -41,7 +41,8 @@ $(document).ready(function() {
   Chart.defaults.global.scaleStartValue = 0;
   Chart.defaults.global.scaleLineColor = "rgba(6, 43, 105, .4)";
 
-  Chart.defaults.Radar.pointDot = false;
+  Chart.defaults.Radar.pointDot = true;
+  Chart.defaults.Radar.pointDotRadius = 2;
   Chart.defaults.Radar.pointLabelFontColor = "#EFEFEF";
   Chart.defaults.Radar.pointLabelFontSize = 14;
   Chart.defaults.Radar.pointLabelFontFamily = "'Open Sans', sans-serif";
@@ -57,16 +58,17 @@ $(document).ready(function() {
   technicalSkills.push({label:"JavaScript", value:3 });
   technicalSkills.push({label:"PhoneGap", value:1.5 });
   //Système
-  technicalSkills.push({label:"Système Linux", value:4 });
-  technicalSkills.push({label:"Scripting Bash/Perl", value:3.5 });
+  technicalSkills.push({label:"Système Linux", value:4.5 });
+  technicalSkills.push({label:"Scripting Bash/Perl", value:4 });
   technicalSkills.push({label:"Réseaux", value:4 });
-  technicalSkills.push({label:"Middleware", value:4 });
+  technicalSkills.push({label:"Middleware", value:3.5 });
   // Gestion de projets
-  technicalSkills.push({label:"Scrum", value:4 });
+  technicalSkills.push({label:"Scrum", value:4.5 });
 
   var professionalSkills = [];
   professionalSkills.push({label:"Gestion du stress", value:4.5 });
-  professionalSkills.push({label:"Organisation", value:4.5 });
+  professionalSkills.push({label:"Organisation", value:4 });
+  professionalSkills.push({label:"Rigueur", value:4.5 });
   professionalSkills.push({label:"Autonomie", value:3 });
   professionalSkills.push({label:"Travail en équipe", value:4 });
   professionalSkills.push({label:"Prise de responsabilité", value:4 });
