@@ -34,19 +34,19 @@ a:hover {
 }
 
 .navbar li.active {
-  border-top: 3px solid #38578C;
+  border-top: 3px solid #30518C;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    color: #38578C;
+    color: #30518C;
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-  color: #38578C;
+  color: #30518C;
   background-color: transparent;
 }
 
@@ -56,7 +56,7 @@ a:hover {
 }
 
 .avatar {
-  max-width: 80px;
+  max-width: 150px;
   height: auto;
   border-radius: 50%;
 }
@@ -88,7 +88,7 @@ section {
 }
 
 .section-intro {
-  background-color: #38578C;
+  background-color: #30518C;
   padding-top: 150px;
   padding-bottom: 150px;
   color: #EFEFEF;
@@ -98,7 +98,7 @@ section {
 }
 
 .section-skills {
-  background-color: #38578C;
+  background-color: #30518C;
   color: #EFEFEF;
 }
 
@@ -111,7 +111,7 @@ section {
 }
 
 .section-contact {
-  background-color: #38578C;
+  background-color: #30518C;
   color: #EFEFEF;
 }
 
@@ -129,7 +129,7 @@ section {
 
 .misc_display_body {
   background: rgba(255, 255, 255, 0.9);
-  color: #38578C;
+  color: #30518C;
   bottom: 0;
   left: 0;
   opacity: 0;
@@ -165,7 +165,7 @@ section {
 .ink {
 	display: block;
   position: absolute;
-	background: #38578C;
+	background: #30518C;
 	border-radius: 100%;
 	transform: scale(0);
 }
