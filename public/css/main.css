@@ -97,6 +97,7 @@ section {
 .section-intro {
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     rgba(0,0,0,0.55) url('../img/panorama.jpg') no-repeat center;
+    background-attachment: fixed;
     background-size: cover;
     padding-top: 150px;
     padding-bottom: 150px;
