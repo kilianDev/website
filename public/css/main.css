@@ -5,8 +5,14 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 a:hover {
-    text-decoration: none;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .row-experience {
