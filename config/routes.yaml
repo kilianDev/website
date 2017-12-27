@@ -1,0 +1,10 @@
+homepage:
+    path: /
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
+    defaults:
+        path: /main
+        permanent: true
+
+index:
+    path: /main
+    controller: App\Controller\MainController::index
