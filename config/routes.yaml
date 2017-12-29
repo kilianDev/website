@@ -2,11 +2,11 @@ homepage:
     path: /
     controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
     defaults:
-        path: /main
+        path: '/%app.locale%/main'
         permanent: true
 
 index:
-    path: /main
+    path: /{_locale}/main
     controller: App\Controller\MainController::index
     requirements:
-        _locale: en|fr
+        _locale: '%app.locales%'

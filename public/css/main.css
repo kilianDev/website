@@ -61,6 +61,16 @@ a:hover {
     position: relative;
 }
 
+.navbar li.flag {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar li.flag img {
+    max-width: 30px;
+    border-radius: 50%;
+}
+
 .avatar {
     max-width: 150px;
     height: auto;
