@@ -2,10 +2,10 @@
     <div class="row">
         <header class="section-header">
             <h2 class="section-title">
-                Expériences
+                {{ 'experience.title'|trans }}
             </h2>
             <h3 class="section-subtitle">
-                Condensé de ma vie professionnelle ces dernières années
+                {{ 'experience.subtitle'|trans|nl2br }}
             </h3>
         </header>
     </div>
@@ -17,10 +17,9 @@
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-            <h3>Update in progress</h3>
+            <h3>{{ 'maj.title'|trans }}</h3>
             <p>
-                Un peu de teasing (en vrac) :<br />
-                Node.js / MongoDB / Docker / Kubernetes / AWS / Angular / etc...
+                {{ 'maj.subtitle'|trans|nl2br }}
             </p>
             <p><i class="fa fa-3x fa-ellipsis-h"></i></p>
         </div>
@@ -32,65 +31,51 @@
 
     <div class="row row-experience">
         <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-            <h3>Scrum Master</h3>
-            <p>Leader de 2 équipes Scrum (de 3 à 9 collaborateurs) depuis janvier 2015.</p>
-            <p>Mise en place et animation des cérémonies Scrum.</p>
-            <p>Collaboration étroite avec les Product Owner pour construction des backlog produit.</p>
+            <h3>{{ 'experience.list.scrum.title'|trans }}</h3>
+            {{ 'experience.list.scrum.description'|trans|nl2br }}
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-            <h3>Système / Réseaux</h3>
-            <p>Garant du bon fonctionnement d'une application multi composant / multi technologies.</p>
-            <p>Administration d'une solution SAAS interconnectant près de 1000 serveurs.</p>
-            <p>Administration et configuration des outils internes d'une équipe R&D.</p>
+            <h3>{{ 'experience.list.system.title'|trans }}</h3>
+            {{ 'experience.list.system.description'|trans|nl2br }}
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-            <h3>Référent Git/Svn</h3>
-            <p>Leader de la mise en place d'un workflow SVN commun à tous les développeurs.</p>
-            <p>Leader de la migration de projets SVN sous GIT.</p>
+            <h3>{{ 'experience.list.git.title'|trans }}</h3>
+            {{ 'experience.list.git.description'|trans|nl2br }}
         </div>
     </div>
     <div class="row row-experience">
         <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-            <h3>PHP</h3>
-            <p>Développement d'un frontal professionnel SAAS, basé sur un backend PHP5.</p>
-            <p>Participation à la migration d'un code legacy sous le framework Symfony 2.7.</p>
+            <h3>{{ 'experience.list.php.title'|trans }}</h3>
+            {{ 'experience.list.php.description'|trans|nl2br }}
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-            <h3>MySQL</h3>
-            <p>Administrateur de bases de données.</p>
-            <p>Optimisation, partitionnement et scalabilité de tables contenant plusieurs dizaines de milliards de
-                lignes.</p>
+            <h3>{{ 'experience.list.mysql.title'|trans }}</h3>
+            {{ 'experience.list.mysql.description'|trans|nl2br }}
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-            <h3>Web</h3>
-            <p>Développement d'une application internet riche.</p>
-            <p>Utilisation de framework connus - Jquery, Bootstrap principalement.</p>
+            <h3>{{ 'experience.list.web.title'|trans }}</h3>
+            {{ 'experience.list.web.description'|trans|nl2br }}
         </div>
     </div>
 
     <div class="row row-experience">
         <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-            <h3>Supervision</h3>
-            <p>Développement d'une solution de supervision réseau/applicative basée en backend sur la technologie
-                Nagios.</p>
-            <p>Développement de scripts avancés (technologie Bash/Perl principalement) pour la collecte de données
-                de supervision.</p>
+            <h3>{{ 'experience.list.monitoring.title'|trans }}</h3>
+            {{ 'experience.list.monitoring.description'|trans|nl2br }}
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-            <h3>Middleware orienté message</h3>
-            <p>Implémentation de RabbitMQ permettant d'interconnecter près de 1000 serveurs Unix.</p>
-            <p>Développement des applicatifs basés sur ce middleware, assurant une autonomie des dialogues ainsi
-                qu'un transfert fiabilisé des informations client/serveur.</p>
+            <h3>{{ 'experience.list.middleware.title'|trans }}</h3>
+            {{ 'experience.list.middleware.description'|trans|nl2br }}
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-            <h3>Transformation de données</h3>
-            <p>Intégration de données avancée via des ETL développés sur l'IDE Talend.</p>
+            <h3>{{ 'experience.list.transformation.title'|trans }}</h3>
+            {{ 'experience.list.transformation.description'|trans|nl2br }}
         </div>
     </div>
 </div>

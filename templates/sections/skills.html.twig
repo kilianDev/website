@@ -3,10 +3,10 @@
     <div class="row">
         <header class="section-header">
             <h2 class="section-title">
-                Compétences
+                {{ 'skills.title'|trans }}
             </h2>
             <h3 class="section-subtitle">
-                Professionnelles, techniques et relationnelles
+                {{ 'skills.subtitle'|trans|nl2br }}
             </h3>
         </header>
     </div>
@@ -18,10 +18,9 @@
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-            <h3>Update in progress</h3>
+            <h3>{{ 'maj.title'|trans }}</h3>
             <p>
-                Un peu de teasing (en vrac) :<br />
-                Node.js / MongoDB / Docker / Kubernetes / AWS / Angular / etc...
+                {{ 'maj.subtitle'|trans|nl2br }}
             </p>
             <p><i class="fa fa-3x fa-ellipsis-h"></i></p>
         </div>
@@ -40,3 +39,4 @@
             <canvas id="professionalChart" class="skill-canvas"></canvas>
         </div>
     </div>
+</div>

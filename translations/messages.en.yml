@@ -1,2 +1,53 @@
-foo:
-  bar: 'enEN'
+navbar:
+  home: 'Home'
+  experience: 'Experience'
+  skills: 'Skills'
+  misc: 'Misc'
+  contact: 'Contact'
+
+maj:
+  title: 'Update in progress'
+  subtitle: |
+    Section currently not translated in english :(
+    Some teasing:
+    Node.js / MongoDB / Docker / Kubernetes / AWS / Angular / etc...
+
+intro:
+  title: 'Kilian Devouassoux'
+  subtitle: |
+    Scrum Master
+    Full-Stack software engineer
+
+experience:
+  title: 'Experience'
+  subtitle: 'Professional experiences during the last years'
+
+skills:
+  title: 'Skills'
+  subtitle: 'Professional, technical and more'
+
+misc:
+  title: 'Misc'
+  subtitle: 'What I like besides software engineering'
+  list:
+    badminton:
+      title: 'Badminton'
+      description: 'Passionate player, competitor and club accountant'
+    photo:
+      title: 'Photo'
+      description: 'Amateur photograph'
+    travels:
+      title: 'Travels'
+      description: ''
+    movies:
+      title: 'Movies/TV Series'
+      description: ''
+
+contact:
+  title: 'Contact'
+  subtitle: 'Please feel free to contact me, I will be happy to speak with you !'
+  infos:
+    email: 'kilian.devouassoux@gmail.com'
+    phone: '+33 6 59 58 25 66'
+    linkedin: 'Linkedin'
+    location: 'Grenoble and surrounding area'

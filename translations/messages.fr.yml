@@ -1,2 +1,110 @@
-foo:
-  bar: 'frFR'
+navbar:
+  home: 'Accueil'
+  experience: 'Expérience'
+  skills: 'Compétences'
+  misc: 'Divers'
+  contact: 'Contact'
+
+maj:
+  title: 'Update in progress'
+  subtitle: |
+    Un peu de teasing (en vrac) :
+    Node.js / MongoDB / Docker / Kubernetes / AWS / Angular / etc...
+
+intro:
+  title: 'Kilian Devouassoux'
+  subtitle: |
+    Scrum Master
+    Ingénieur Système
+    Développeur full-stack
+
+experience:
+  title: 'Expérience'
+  subtitle: 'Condensé de ma vie professionnelle ces dernières années'
+  list:
+    scrum:
+      title: 'Scrum Master'
+      description: |
+        Leader de 2 équipes Scrum (de 3 à 9 collaborateurs) depuis janvier 2015.
+
+        Mise en place et animation des cérémonies Scrum.
+        
+        Collaboration étroite avec les Product Owner pour construction des backlog produit.
+    system:
+      title: 'Système / Réseaux'
+      description: |
+        Garant du bon fonctionnement d'une application multi composant / multi technologies.
+
+        Administration d'une solution SAAS interconnectant près de 1000 serveurs.
+
+        Administration et configuration des outils internes d'une équipe R&D.
+    git:
+      title: 'Référent Git/Svn'
+      description: |
+        Leader de la mise en place d'un workflow SVN commun à tous les développeurs.
+
+        Leader de la migration de projets SVN sous GIT.
+    php:
+      title: 'PHP'
+      description: |
+        Développement d'un frontal professionnel SAAS, basé sur un backend PHP5.
+
+        Participation à la migration d'un code legacy sous le framework Symfony 2.7.
+    mysql:
+      title: 'MySQL'
+      description: |
+        Administrateur de bases de données.
+
+        Optimisation, partitionnement et scalabilité de tables contenant plusieurs dizaines de milliards de lignes.
+    web:
+      title: 'Web'
+      description: |
+        Développement d'une application internet riche.
+
+        Utilisation de framework connus - Jquery, Bootstrap principalement.
+    monitoring:
+      title: 'Supervision'
+      description: |
+        Développement d'une solution de supervision réseau/applicative basée en backend sur la technologie Nagios.
+
+        Développement de scripts avancés (technologie Bash/Perl principalement) pour la collecte de données de supervision.
+    middleware:
+      title: 'Middleware orienté message'
+      description: |
+        Implémentation de RabbitMQ permettant d'interconnecter près de 1000 serveurs Unix.
+
+        Développement des applicatifs basés sur ce middleware, assurant une autonomie des dialogues ainsi qu'un transfert fiabilisé des informations client/serveur.
+    transformation:
+      title: 'Transformation de données'
+      description: |
+        Intégration de données avancée via des ETL développés sur l'IDE Talend.
+
+skills:
+  title: 'Compétences'
+  subtitle: 'Professionnelles, techniques et relationnelles'
+
+misc:
+  title: 'Divers'
+  subtitle: 'Lorsque je m''éloigne d''un clavier'
+  list:
+    badminton:
+      title: 'Badminton'
+      description: 'Joueur passioné, compétiteur régulier et trésorier'
+    photo:
+      title: 'Photo'
+      description: 'Photographe amateur'
+    travels:
+      title: 'Voyages'
+      description: ''
+    movies:
+      title: 'Films/Séries'
+      description: ''
+
+contact:
+  title: 'Contact'
+  subtitle: 'N''hésitez pas à me contacter, je serai ravi de pouvoir échanger avec vous !'
+  infos:
+    email: 'kilian.devouassoux@gmail.com'
+    phone: '+33 6 59 58 25 66'
+    linkedin: 'Linkedin'
+    location: 'Grenoble et environs'
