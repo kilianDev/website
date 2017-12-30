@@ -27,12 +27,12 @@
                 </li>
                 <li class="flag">
                     <a href="{{ path('index', {'_locale': 'fr'}) }}">
-                        <img src="{{ asset('/img/france-flag-square-icon-64.png') }}" alt="fr"/>
+                        <img src="{{ asset('/img/france-flag-square-icon-64.png') }}" alt="fr" {% if app.request.locale == 'fr' %} class="active" {% endif %}/>
                     </a>
                 </li>
                 <li class="flag">
                     <a href="{{ path('index', {'_locale': 'en'}) }}">
-                        <img src="{{ asset('/img/united-kingdom-flag-square-icon-64.png') }}" alt="en"/>
+                        <img src="{{ asset('/img/united-kingdom-flag-square-icon-64.png') }}" alt="en" {% if app.request.locale == 'en' %} class="active" {% endif %}/>
                     </a>
                 </li>
             </ul>
